@@ -12,6 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("./images/background1.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .signin {
@@ -22,11 +26,11 @@
 }
 
 .signin_wrapper {
-  background: #0087ffde;
+  background: rgb(178, 245, 225);
 }
 
 .signin_success {
-  background: #005baa;
+  background: rgb(55,108,92);
 }
 .signin_success h1 {
   letter-spacing: 1px;
@@ -43,7 +47,7 @@ form {
 h2 {
   text-align: center;
   font-family: "Righteous", cursive;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 500;
   margin: 25px;
 }
@@ -79,11 +83,10 @@ button {
   font-weight: 700;
   margin: 0px;
   padding: 0px;
-  text-align: center;
 }
 
 span.signup {
-  color: #ffffffde;
+  color: black;
   cursor: pointer;
 }
 

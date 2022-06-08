@@ -7,7 +7,6 @@ import SubmitForm from "./SubmitForm";
 
 const SignIn = () => {
   const [isSubmitSuccess, setIsSubmitSuccess] = useState(false);
-
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -52,11 +51,9 @@ const SignIn = () => {
               onBlur={formik.handleBlur}
               value={formik.values.email}
             />
-
             {formik.touched.email && formik.errors.email ? (
               <div className="error_msg">{formik.errors.email}</div>
             ) : null}
-
             <TextField
               name="password"
               type="password"
@@ -78,7 +75,6 @@ const SignIn = () => {
             {formik.touched.password && formik.errors.password ? (
               <div className="error_msg">{formik.errors.password}</div>
             ) : null}
-
             <button type="submit">Login</button>
             <h3> Not a member? <span className="signup">Signup now</span></h3>
           </form>
