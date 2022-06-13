@@ -5,30 +5,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .container {
   background: #ffffff;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  background-image: url("./images/background1.jfif");
+  background-image: url("./images/background2.jfif");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
-
 .signin {
   width: 500px;
   min-height: 450px;
   border-radius: 3px;
   box-shadow: 3px 3px 5px #001324dc;
 }
-
 .signin_wrapper {
   background: rgb(178, 245, 225);
 }
-
 .signin_success {
   background: rgb(55,108,92);
 }
@@ -63,7 +59,6 @@ div.textField input {
 div.textField svg {
   font-size: 25px;
 }
-
 button {
   background: #001324dc;
   width: 100%;
@@ -84,13 +79,18 @@ button {
   margin: 0px;
   padding: 0px;
 }
-
 span.signup {
   color: black;
   cursor: pointer;
 }
-
 h3 {
   text-align: center;
   margin-top: 15px;
+}
+
+/* Media Query for Login Form  */
+@media screen and (max-width: 600px) {
+  .signin {
+    width: 100%;
+  }
 }

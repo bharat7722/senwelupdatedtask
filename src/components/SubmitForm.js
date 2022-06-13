@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fade } from 'react-awesome-reveal';
 const SubmitForm = () => {
-    const myStyle = {
+    const myStyle ={
         top:"50%",
         left:"50%",
         position:"absolute",

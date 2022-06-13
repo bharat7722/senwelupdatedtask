@@ -76,7 +76,7 @@ const SignIn = () => {
               <div className="error_msg">{formik.errors.password}</div>
             ) : null}
             <button type="submit">Login</button>
-            <h3> Not a member? <span className="signup">Signup now</span></h3>
+            <h3> Not a member? <a href="#" className="signup">Signup now</a></h3>
           </form>
         )}
       </div>
